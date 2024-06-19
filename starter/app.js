@@ -8,7 +8,7 @@ app.get("/",(req,res)=> {
     res.send("This is homepage section")
 })
 app.use(express.json())
-app.use("/api/v1/task",task)
+app.use("/api/v1/tasks",task)
 
 const start= async()=> {
     try {
